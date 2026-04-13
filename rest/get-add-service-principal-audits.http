@@ -1,6 +1,6 @@
 ### get-add-service-principal-audits.http
 ### Author: Shannon Eldridge-Kuehn
-### Created: 2026-03-14
+### Created: 2026-04-12
 ### Description: REST example for retrieving Add service principal audit events.
 
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits?$filter=activityDisplayName eq 'Add service principal'

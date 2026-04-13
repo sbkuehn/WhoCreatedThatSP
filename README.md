@@ -1,4 +1,4 @@
-# Find Service Principal Creator
+# SPSleuth
 
 Author: Shannon Eldridge-Kuehn
 
@@ -16,16 +16,16 @@ This repo contains the standalone scripts from the blog plus a reusable PowerShe
 
 ### PowerShell module
 
-- `FindServicePrincipalCreator.psm1`
-- `FindServicePrincipalCreator.psd1`
+- `SPSleuth.psm1`
+- `SPSleuth.psd1`
 
 The module exports these functions:
 
-- `Connect-SEKGraph`
-- `Get-SEKServicePrincipal`
-- `Get-SEKServicePrincipalById`
-- `Get-SEKServicePrincipalAuditEvent`
-- `Get-SEKServicePrincipalCreator`
+- `Connect-SPSleuthGraph`
+- `Get-SPSleuthServicePrincipal`
+- `Get-SPSleuthServicePrincipalById`
+- `Get-SPSleuthServicePrincipalAuditEvent`
+- `Get-SPSleuthServicePrincipalCreator`
 
 ### REST examples
 
@@ -51,9 +51,9 @@ Install-Module Microsoft.Graph -Scope CurrentUser
 ## Example usage
 
 ```powershell
-Import-Module ./FindServicePrincipalCreator.psd1 -Force
-Connect-SEKGraph
-Get-SEKServicePrincipalCreator -ServicePrincipalName "MyServicePrincipal"
+Import-Module ./SPSleuth.psd1 -Force
+Connect-SPSleuthGraph
+Get-SPSleuthServicePrincipalCreator -ServicePrincipalName "MyServicePrincipal"
 ```
 
 ## Notes
@@ -79,8 +79,8 @@ rest/
   get-add-service-principal-audits.http
 docs/
   rest-notes.md
-FindServicePrincipalCreator.psm1
-FindServicePrincipalCreator.psd1
+SPSleuth.psm1
+SPSleuth.psd1
 README.md
 LICENSE
 .gitignore
