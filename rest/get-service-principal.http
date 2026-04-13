@@ -1,0 +1,7 @@
+### get-service-principal.http
+### Author: Shannon Eldridge-Kuehn
+### Created: 2026-03-14
+### Description: REST example for retrieving a service principal by object ID.
+
+GET https://graph.microsoft.com/v1.0/servicePrincipals/{{servicePrincipalObjectId}}?$select=id,appId,displayName,createdDateTime
+Authorization: Bearer {{token}}
