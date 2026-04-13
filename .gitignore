@@ -1,0 +1,118 @@
+# =========================
+# PowerShell Specific
+# =========================
+
+# Compiled / generated files
+*.psd1.bak
+*.psm1.bak
+*.ps1xml.bak
+
+# PowerShell transcripts & logs
+*.log
+*.txt
+*.csv
+*.xml
+*.json
+
+# PowerShell debugging / temp
+*.clixml
+
+# =========================
+# Modules & Dependencies
+# =========================
+
+# Local modules (if not part of repo)
+Modules/
+.psmodules/
+
+# PSDepend / dependency folders
+.depend/
+packages/
+
+# =========================
+# Build / Output
+# =========================
+
+# Common output folders
+bin/
+obj/
+out/
+output/
+dist/
+publish/
+
+# Packaged modules
+*.nupkg
+
+# =========================
+# IDE / Editor
+# =========================
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# JetBrains Rider / IntelliJ
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# =========================
+# Secrets & Sensitive
+# =========================
+
+# Environment files
+.env
+.env.*
+
+# Certificates / keys
+*.pfx
+*.p12
+*.key
+*.cer
+
+# Azure / credentials exports
+*.publishsettings
+
+# Token caches
+TokenCache.dat
+AzureRmContext.json
+
+# =========================
+# Testing
+# =========================
+
+# Pester results
+TestResults/
+coverage.xml
+
+# =========================
+# CI/CD
+# =========================
+
+# GitHub Actions artifacts
+*.artifact
+*.cache
+
+# Terraform (if used alongside PS)
+.terraform/
+*.tfstate*
+crash.log
+
+# =========================
+# Misc
+# =========================
+
+# Temporary files
+*.tmp
+*.temp
+*~
